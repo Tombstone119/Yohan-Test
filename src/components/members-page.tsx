@@ -150,7 +150,7 @@ export default function MembersPage() {
               Discover your potential
             </p>
             <Link
-              to="/appointments"
+              to="/membership-form"
               className="bg-white text-gray-800 px-8 py-3 rounded-full font-semibold hover:bg-red-800 hover:text-white transition-colors"
             >
               Join With Us
@@ -319,7 +319,6 @@ export default function MembersPage() {
         <Bmi />
       </section>
 
-
       {/* Testimonials Section */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
@@ -339,9 +338,13 @@ export default function MembersPage() {
                 viewport={{ once: true }}
                 className="bg-[#171813] p-8 rounded-lg"
               >
-                <p className="text-white mb-4">&ldquo;{testimonial.text}&rdquo;</p>
+                <p className="text-white mb-4">
+                  &ldquo;{testimonial.text}&rdquo;
+                </p>
                 <div>
-                  <h4 className="font-semibold text-white">{testimonial.name}</h4>
+                  <h4 className="font-semibold text-white">
+                    {testimonial.name}
+                  </h4>
                   <p className="text-gray-400">{testimonial.role}</p>
                 </div>
               </motion.div>
@@ -349,7 +352,6 @@ export default function MembersPage() {
           </div>
         </div>
       </section>
-
 
       {/* Contact Section */}
       <section className="py-20 bg-black">
@@ -365,7 +367,8 @@ export default function MembersPage() {
               Ready to Begin Your Fitness Journey?
             </h2>
             <p className="text-lg text-red-800 mb-8">
-              Join A Vibrant Community For Fuel Motivation, Engagement Drives Progress, And Transformation.
+              Join A Vibrant Community For Fuel Motivation, Engagement Drives
+              Progress, And Transformation.
             </p>
             <Link
               to="#"

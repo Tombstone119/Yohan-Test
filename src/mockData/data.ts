@@ -1,6 +1,5 @@
 
 
-
 export type MenuItem = {
   id: number;
   link: string;
@@ -11,12 +10,12 @@ export const NavbarMenu: MenuItem[] = [
   {
     id: 1, 
     title: "Home",
-    link: "/"
+    link: "home"
   },
   {
     id: 2, 
     title: "Members",
-    link: "#"
+    link: "members"
   },
   {
     id: 3, 

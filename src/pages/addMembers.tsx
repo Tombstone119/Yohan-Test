@@ -1,10 +1,10 @@
 
 import Navbar from "../components/header-navigator";
 import Footer from "../components/footer";
-import MembersPage from "../components/members-page";
+import MembershipForm from "../components/add-members-page";
+import PricingSection from "../components/pricing-section";
 
-
-export default function Members() {
+export default function AddMembers() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navbar - Fixed to the top */}
@@ -18,17 +18,16 @@ export default function Members() {
         {/* pt-16 is for top padding to prevent navbar overlap */}
         <div>
           <div>
-            <MembersPage/>
+            <PricingSection/>
+            <MembershipForm/>
           </div>
         </div>
       </div>
       {/* Footer - Fixed to the bottom */}
-      <div className="bg-red-600 text-white py-1
-      ">
+      <div className="bg-red-600 text-white py-1">
         <Footer />
       </div>
     </div>
-
 
   );
 }
